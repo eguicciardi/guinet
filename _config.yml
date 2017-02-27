@@ -1,0 +1,61 @@
+# # # # # # # #
+#   K i k o   #
+# # # # # # # #
+
+# Basic
+name:               "Emanuele Guicciardi"
+description:        "Web Developer"
+
+# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
+url:                "//guicciardi.net"
+author:             "Emanuele Guicciardi"
+twitter:
+  username:         "emaguicciardi"
+#facebook:
+#  app_id:           1234
+#    publisher:      1234
+
+# URL
+baseurl:            ""
+#baseurl:           "" #For Root Domain
+permalink:          /:year/:month/:day/:title/
+
+# Markdown
+markdown:           kramdown
+
+# Google Analytics
+google-analytics:
+    id: "UA-270658-21"
+
+# Google verification
+google-verification:
+    id: "AQUR9Im6qs0CPNge5LIUQL5nVBMA8Jlz9BKp5YB8wW0"
+
+# Navigation
+nav:
+  - name:           "About"
+    href:           "//guicciardi.net/about"
+ # - name:           "Download"
+#    href:           "//github.com/gfjaru/Kiko/releases"
+
+# Sass
+sass:
+  style:            :compressed
+
+# Scopes
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
+
+gems:
+  - jekyll-seo-tag
