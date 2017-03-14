@@ -1,6 +1,6 @@
-# # # # # # # #
-#   K i k o   #
-# # # # # # # #
+# # # # # # # # # # #
+#   Guicciardi.net  #
+# # # # # # # # # # #
 
 # Basic
 name:               "Emanuele Guicciardi"
@@ -35,9 +35,9 @@ google-verification:
 nav:
   - name:           "About"
     href:           "//guicciardi.net/about"
- # - name:           "Download"
-#    href:           "//github.com/gfjaru/Kiko/releases"
-
+  - name:           "Notes"
+    href:           "//github.com/eguicciardi/notes"
+    
 # Sass
 sass:
   style:            :compressed
