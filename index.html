@@ -27,7 +27,7 @@ layout: default
                     </h2>
                 {% endif %}
                 <div class="list-post-date">
-                    <time>{{ post.date | date_to_string }}</time>
+                    <time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}
                 </div>
             </div>
         {% endfor %}
