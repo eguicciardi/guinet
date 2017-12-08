@@ -33,7 +33,10 @@ body {
 
 footer {
 
+    border-top: 1px solid #aaa;
     font-size: .75rem;
+    padding-top: .5rem;
+    text-align: right;
 
 }
 
@@ -61,7 +64,7 @@ footer a {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
   font-weight: 600;
   line-height: 1.1;
   color: #333;
@@ -323,7 +326,8 @@ tbody tr:nth-child(odd) th {
   }
 
   .masthead-nav {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
 
     a {
       color: #aaa;
@@ -345,6 +349,17 @@ tbody tr:nth-child(odd) th {
     }
   }
 
+}
+
+.intro {
+
+    margin-bottom: 1rem;
+
+    a {
+
+        color: #515151;
+
+    }
 }
 
 .page {

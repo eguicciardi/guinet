@@ -6,18 +6,13 @@
 name:               "Emanuele Guicciardi"
 description:        "Web Developer"
 
-# jekyll-seo-tag, see: http://www.rubydoc.info/gems/jekyll-seo-tag/1.2.0
 url:                "//guicciardi.net"
 author:             "Emanuele Guicciardi"
 twitter:
   username:         "emaguicciardi"
-#facebook:
-#  app_id:           1234
-#    publisher:      1234
 
 # URL
 baseurl:            ""
-#baseurl:           "" #For Root Domain
 permalink:          /:year/:month/:day/:title/
 
 # Markdown
@@ -33,11 +28,17 @@ google-verification:
 
 # Navigation
 nav:
-  - name:           "About"
-    href:           "//guicciardi.net/about"
-  - name:           "Notes"
-    href:           "//github.com/eguicciardi/notes"
-    
+- name: "Home"
+  href: "/"
+- name: "About"
+  href: "/about"
+- name: "Notes"
+  href: "//github.com/eguicciardi/notes"
+  target: "blank"
+- name: "Digest"
+  href: "//md5.guicciardi.net"
+  target: "blank"
+
 # Sass
 sass:
   style:            :compressed
@@ -57,5 +58,5 @@ defaults:
     values:
       layout:       "post"
 
-gems:
+plugins:
   - jekyll-seo-tag

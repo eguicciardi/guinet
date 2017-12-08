@@ -11,4 +11,6 @@ My areas of expertise are Drupal and Wordpress development, deployment and harde
 
 I like simple, clean and maintenable code and I deeply care about the code I write and the code I've been asked to look behind.
 
+Currently I'm serving as head of software development at Tesene in Pisa.
+
 Feel free to contact me at e -AT- guicciardi.net

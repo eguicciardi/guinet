@@ -1,0 +1,5 @@
+<nav class="masthead-nav">
+    {% for nav in site.nav %}
+        <a href="{{ nav.href }}" {% if nav.target == 'blank' %} target="_blank" {% endif %}>{{ nav.name }}</a>
+    {% endfor %}
+</nav>
