@@ -41,7 +41,7 @@ nav:
 
 # Sass
 sass:
-  style:            :compressed
+  style: compressed
 
 # Scopes
 defaults:
@@ -60,3 +60,4 @@ defaults:
 
 plugins:
   - jekyll-seo-tag
+  - octopress-minify-html
