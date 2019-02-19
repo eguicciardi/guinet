@@ -58,6 +58,7 @@ defaults:
     values:
       layout:       "post"
 
+# Plugins
 plugins:
   - jekyll-seo-tag
   - octopress-minify-html
