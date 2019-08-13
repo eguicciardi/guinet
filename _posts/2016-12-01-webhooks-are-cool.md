@@ -5,7 +5,8 @@ taxonomy:
     tag:
         - drupal
         - views
-visible: true
+visible: false
+published: false
 ---
 
 Views is the module responsible for the 80% of Drupal greatness. Let’s be fair, if you haven’t used it once probably you have never made a Drupal worth site.
