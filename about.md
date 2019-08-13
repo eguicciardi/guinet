@@ -1,16 +1,24 @@
 ---
-title: About
+title: About me
 permalink: /about/
+
+
 ---
 
-<p class="lead">I'm a result driven web developer with more than 10 years experience in custom projects development.</p>
+<p class="lead">I'm a result driven web developer with more than 15 years experience in custom projects development.</p>
 
-From complex company websites to ecommerce solutions and ad-hoc software platforms both desktop and mobile.
+My areas of expertise are **Drupal** and **Wordpress** development, deployment and hardening. Data interaction between systems and bug fixing.
 
-My areas of expertise are Drupal and Wordpress development, deployment and hardening. Data interaction between systems and bug fixing.
+I like simple, clean and maintenable code. I deeply care about the code I write and the one I've been asked to look behind.
 
-I like simple, clean and maintenable code and I deeply care about the code I write and the code I've been asked to look behind.
-
-Currently I'm serving as head of software development at Tesene in Pisa.
+Currently I'm head of DevOps and senior developer at [Tesecom](https://www.tesecom.it) in Pisa.
 
 Feel free to contact me at e -AT- guicciardi.net
+
+## About this site
+
+This site is based on [Jekyll](http://jekyllrb.com) and hosted on [Dreamhost](https://www.dreamhost.com/). It's mantained by me and based on the design of [Fajar Umbara](https://umbara.web.id). You can fork or clone it on [GitHub](https://github.com/eguicciardi/guinet). 
+
+
+
+
