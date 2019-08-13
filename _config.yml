@@ -32,6 +32,8 @@ nav:
   href: "/"
 - name: "About"
   href: "/about"
+- name: "Skills"
+  href: "/skills"
 - name: "Notes"
   href: "//github.com/eguicciardi/notes"
   target: "blank"
@@ -39,7 +41,7 @@ nav:
   href: "//md5.guicciardi.net"
   target: "blank"
 
-# Sass
+  # Sass
 sass:
   style: compressed
 
@@ -62,3 +64,8 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - octopress-minify-html
+
+# Collections
+
+collections:
+  - experiences

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<header class="masthead">
+  {% include nav.html %}
+</header>
+<div class="content page">
+  {% for experiences in site.experiences %}
+    <h2>{{ experiences.title }}</h2>
+    {{experienxces.start}} - {{experienxces.stop}}
+    <p>{{ experiences.content | markdownify }}</p>
+  {% endfor %}
+</div>
+
+
+
+<h1 class="page-title">{{ page.title }}</h1>
+{{ content }}

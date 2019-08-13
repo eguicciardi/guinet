@@ -1,30 +1,47 @@
 ---
 layout: default
 ---
-<header class="masthead">
-    {% include nav.html %}
-    <h1 class="masthead-title">
-        <a href="{{ site.baseurl }}/">{{ site.name }}</a>
-    </h1>
-</header>
-{% include intro.html %}
-<div class="content list">
+
+<div class="row">
+    <div class="col-12">
+        <h1 class="site-title">
+            <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+    <!-- Column 1-->
+    <div class="col-6">
+        {% include intro.html %}
+    </div>
+
+    <!-- Column 2-->
+    <div class="col-6">
+        {% include intro.html %}
+    </div>
+</div>
+
+
+<div class="row content list">
     {% if site.posts.size == 0 %}
-        <h2>No post found</h2>
+        <h2>No posts found</h2>
     {% else %}
         {% for post in site.posts %}
-            <div class="list-item">
-                {% if post.ext-url == nil %}
-                    <h2 class="list-post-title">
-                        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    </h2>
-                {% else %}
-                    <h2 class="list-post-title ext-url">
-                        <a href="{{ post.ext-url }}" target="_blank">{{ post.title }}</a>
-                    </h2>
-                {% endif %}
-                <div class="list-post-date">
-                    <time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}
+            <div class="col-6">
+                <div class="list-item">
+                    {% if post.ext-url == nil %}
+                        <h3 class="list-post-title">
+                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                        </h3>
+                    {% else %}
+                        <h3 class="list-post-title ext-url">
+                            <a href="{{ post.ext-url }}" target="_blank">{{ post.title }}</a>
+                        </h3>
+                    {% endif %}
+                    <div class="list-post-date">
+                        <time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}
+                    </div>
                 </div>
             </div>
         {% endfor %}
