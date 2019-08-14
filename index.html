@@ -1,49 +1,111 @@
 ---
 layout: default
 ---
+<div id="homepage">
 
-<div class="row">
-    <div class="col-12">
-        <h1 class="site-title">
-            <a href="{{ site.baseurl }}/">{{ site.name }}</a>
-        </h1>
-    </div>
-</div>
-
-<div class="row">
-    <!-- Column 1-->
-    <div class="col-6">
-        {% include intro.html %}
+    <div class="row">
+        <div class="col-12 page-title">
+            <h1 class="site-title">
+                <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+            </h1>
+            <h2>Developer</h2>
+        </div>
     </div>
 
-    <!-- Column 2-->
-    <div class="col-6">
-        {% include intro.html %}
-    </div>
-</div>
+    <div class="row">
+        <!-- Column 1-->
+        <div class="col-6">
+            <p>I'm a result driven web developer with more than 15 years experience in custom projects development.</p>
+            
+            <p>My areas of expertise are <b>Drupal</b> and <b>Wordpress</b> development, deployment and hardening. Data interaction between
+            systems and bug fixing.</p>
+            
+            <p>I like simple, clean and maintenable code. I deeply care about the code I write and the one I've been asked to look
+            behind.</p>
+            
+            <p>Currently I'm head of DevOps and senior developer at <a href="https://www.tesecom.it" title="Tesecom SRL Hopme Page" target="_blank">Tesecom</a> in Pisa.</p>
+        </div>
 
-
-<div class="row content list">
-    {% if site.posts.size == 0 %}
-        <h2>No posts found</h2>
-    {% else %}
-        {% for post in site.posts %}
-            <div class="col-6">
-                <div class="list-item">
-                    {% if post.ext-url == nil %}
-                        <h3 class="list-post-title">
-                            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                        </h3>
-                    {% else %}
-                        <h3 class="list-post-title ext-url">
-                            <a href="{{ post.ext-url }}" target="_blank">{{ post.title }}</a>
-                        </h3>
-                    {% endif %}
-                    <div class="list-post-date">
-                        <time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}
+        <!-- Column 2-->
+        <div class="col-6">
+            <div class="resume">
+                <div class="label">Resume</div>
+                {% assign experiences = site.experiences | sort: 'date' | reverse %}
+                {% for exp in experiences %}
+                    <div class="resume-item">
+                        <div class="date">{{exp.start}} to {{exp.stop}}</div>
+                        <div class="position">{{ exp.position }}</div>
+                        <div class="company">{{ exp.businnessname }} | {{ exp.location }}</div>
                     </div>
-                </div>
+                {% endfor %}
             </div>
-        {% endfor %}
-    {% endif %}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 center">
+            <span class="icon-embed2"></span>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-3">
+            <div class="skills">
+                <div class="label">Skills</div>
+        
+                <div class="skill-group">
+                    <div class="skill-group-name">Languages</div>
+                    <div class="skill-name">PHP</div>
+                    <div class="skill-name">Python</div>
+                    <div class="skill-name">Javascript</div>
+                </div>
+        
+                <div class="skill-group">
+                    <div class="skill-group-name">CMS</div>
+                    <div class="skill-name">Drupal</div>
+                    <div class="skill-name">Wordpress</div>
+                    <div class="skill-name">Magento</div>
+                </div>
+        
+                <div class="skill-group">
+                    <div class="skill-group-name">Framework</div>
+                    <div class="skill-name">Laravel</div>
+                    <div class="skill-name">Cake PHP</div>
+                    <div class="skill-name">Slim</div>
+                    <div class="skill-name">Node.js</div>
+                    <div class="skill-name">Express</div>
+                </div>
+        
+            </div>
+        </div>
+    
+        <div class="col-9">
+            <div class="list">
+                <div class="label">Blog</div>
+                {% if site.posts.size == 0 %}
+                    <h3>No posts found</h3>
+                {% else %}
+                    {% for post in site.posts %}
+                        <div class="list-item">
+                            {% if post.ext-url == nil %}
+                                <h3 class="list-post-title">
+                                    <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
+                                    <span class="list-post-date"><time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}</span>
+                                </h3>
+                            {% else %}
+                                <h3 class="list-post-title ext-url">
+                                    <a href="{{ post.ext-url }}" target="_blank">{{ post.title }}</a>
+                                    <span class="list-post-date"><time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}</span>
+                                </h3>
+                            {% endif %}
+                            <p>{{ post.excerpt }}</p>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+        
+    </div>
+
 </div>

@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-<header class="masthead">
-    {% include nav.html %}
-</header>
-<div class="content post">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <div class="post-date">
-        <time>{{ page.date | date_to_string }}</time>
+<div id="post">
+    <div class="row">
+        <div class="col-12">
+            <a class="nodec" href="/" title="Go back to the Home Page"><span class="icon-arrow-left2"></span> Go back to Home Page</a>
+        </div>
     </div>
-    {{ content }}
+
+    <div class="row">
+        <div class="col-12">
+            <h1 class="page-title">{{ page.title }}</h1>
+            <div class="post-date">
+                <time>{{ page.date | date_to_string }}</time> by Emanuele Guicciardi
+            </div>
+            {{ content }}
+        </div>
+    </div>
 </div>
+
