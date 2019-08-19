@@ -91,12 +91,12 @@ layout: default
                             {% if post.ext-url == nil %}
                                 <h3 class="list-post-title">
                                     <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> 
-                                    <span class="list-post-date"><time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}</span>
+                                    <span class="list-post-date"><time>{{ post.date | date_to_string }}</time></span>
                                 </h3>
                             {% else %}
                                 <h3 class="list-post-title ext-url">
-                                    <a href="{{ post.ext-url }}" target="_blank">{{ post.title }}</a>
-                                    <span class="list-post-date"><time>{{ post.date | date_to_string }}</time> {% if post.ext-url != nil %} - External link {% endif %}</span>
+                                    <a href="{{ post.ext-url }}" target="_blank">{% if post.ext-url != nil %} <span class="icon-earth"></span> {% endif %} {{ post.title }} </a>
+                                    <span class="list-post-date"><time>{{ post.date | date_to_string }}</time></span>
                                 </h3>
                             {% endif %}
                             <p>{{ post.excerpt }}</p>

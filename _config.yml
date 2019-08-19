@@ -40,6 +40,9 @@ nav:
 - name: "Digest"
   href: "//md5.guicciardi.net"
   target: "blank"
+- name: "Contact"
+  href: "/contact"
+  target: "blank"
 
   # Sass
 sass:
@@ -64,6 +67,7 @@ defaults:
 plugins:
   - jekyll-seo-tag
   - octopress-minify-html
+  - jekyll-feed
 
 # Collections
 

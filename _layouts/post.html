@@ -14,7 +14,17 @@ layout: default
             <div class="post-date">
                 <time>{{ page.date | date_to_string }}</time> by Emanuele Guicciardi
             </div>
-            {{ content }}
+            <div class="post-content">
+                {% if page.ext-url == nil %}
+                    
+                    {{ content }}
+                
+                {% else %}
+
+                    <p><b>Hi!</b> This post is a link to an external content. Please click <a href="{{page.ext-url}}" target="_blank">here</a> to read it.</p>
+
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>
