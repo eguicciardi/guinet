@@ -3,28 +3,26 @@
 # # # # # # # # # # #
 
 # Basic
-name:               "Emanuele Guicciardi"
-description:        "Web Developer"
+name: "Emanuele Guicciardi"
+description: "Senior Developer"
 
-url:                "//guicciardi.net"
-author:             "Emanuele Guicciardi"
-twitter:
-  username:         "emaguicciardi"
+url: "//guicciardi.net"
+author: "Emanuele Guicciardi"
 
 # URL
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
+baseurl: ""
+permalink: /:year/:month/:day/:title/
 
 # Markdown
-markdown:           kramdown
+markdown: kramdown
 
 # Google Analytics
 google-analytics:
-    id: "UA-270658-21"
+ id: "UA-270658-21"
 
 # Google verification
 google-verification:
-    id: "AQUR9Im6qs0CPNge5LIUQL5nVBMA8Jlz9BKp5YB8wW0"
+ id: "AQUR9Im6qs0CPNge5LIUQL5nVBMA8Jlz9BKp5YB8wW0"
 
 # Navigation
 nav:
@@ -68,6 +66,7 @@ plugins:
   - jekyll-seo-tag
   - octopress-minify-html
   - jekyll-feed
+  - jekyll-gzip
 
 # Collections
 
