@@ -1,8 +1,8 @@
 ---
-title:          "Password rules are bullshit"
-#jekyll-seo-tag
-description:    "Password rules are bullshit"
-author:         "Jeff Atwood"
-ext-url:        "https://blog.codinghorror.com/password-rules-are-bullshit/"
-published: false
+title: "Password rules are bullshit"
+description: "Password rules are bullshit"
+author: "Jeff Atwood"
+ext-url: "https://blog.codinghorror.com/password-rules-are-bullshit/"
+published: true
+excerpt: The password does not contain any uppercase character anyone?!
 ---
