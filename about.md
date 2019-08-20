@@ -2,6 +2,7 @@
 title: About me
 permalink: /about/
 layout: page
+sitemap: false
 ---
 
 <p class="lead">I'm a result driven web developer with more than 15 years experience in custom projects development.</p>

@@ -6,7 +6,7 @@
 name: "Emanuele Guicciardi"
 description: "Senior Developer"
 
-url: "//guicciardi.net"
+url: "https://guicciardi.net"
 author: "Emanuele Guicciardi"
 
 # URL
@@ -67,6 +67,7 @@ plugins:
   - octopress-minify-html
   - jekyll-feed
   - jekyll-gzip
+  - jekyll-sitemap
 
 # Collections
 
