@@ -11,7 +11,7 @@ My areas of expertise are **Drupal** and **Wordpress** development, deployment a
 
 I like simple, clean and maintenable code. I deeply care about the code I write and the one I've been asked to look behind.
 
-Currently I'm head of DevOps and senior developer at [Tesecom](https://www.tesecom.it) in Pisa.
+Currently I'm a senior developer at [Lifetronic](https://www.lifetronic.it) in Pisa.
 
 Feel free to contact me at e -AT- guicciardi.net
 
